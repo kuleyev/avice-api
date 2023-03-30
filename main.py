@@ -11,3 +11,7 @@ def get_random_string():
         strings = file.readlines()
     random_string = random.choice(strings)
     return jsonify({'advice': random_string.strip()})
+
+
+if __name__ == "__main__":
+    app.run()
